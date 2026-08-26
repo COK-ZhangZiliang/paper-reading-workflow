@@ -12,25 +12,16 @@
 
 ## 安装
 
-### 方法一：使用 Codex Skill Installer
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo COK-ZhangZiliang/paper-reading-workflow \
-  --path . \
-  --name paper-reading-workflow
-```
-
-安装器会将 Skill 放到 `~/.codex/skills/paper-reading-workflow`。若该目录已经存在，安装器会停止，避免覆盖本地版本。
-
-### 方法二：直接克隆
+### 推荐：直接克隆到 Codex Skills 目录
 
 ```bash
 git clone https://github.com/COK-ZhangZiliang/paper-reading-workflow.git \
   ~/.codex/skills/paper-reading-workflow
 ```
 
-以后更新：
+仓库根目录就是完整 Skill，克隆后无需再复制子目录。若目标目录已经存在，请使用下面的更新命令，不要重复克隆。
+
+以后更新到最新版本：
 
 ```bash
 git -C ~/.codex/skills/paper-reading-workflow pull --ff-only
