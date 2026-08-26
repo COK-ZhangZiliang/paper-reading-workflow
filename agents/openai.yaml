@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文阅读工作流"
+  short_description: "基于原始论文生成可信笔记、解释公式并安全发布到既有页面"
+  default_prompt: "使用 $paper-reading-workflow 阅读这篇论文，生成有来源边界的中文笔记，并核验任何发布操作。"
