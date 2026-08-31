@@ -1,4 +1,4 @@
 interface:
   display_name: "论文阅读工作流"
-  short_description: "基于原始论文生成可信笔记、解释公式并按需更新既有页面"
-  default_prompt: "使用 $paper-reading-workflow 按指定结构阅读这篇论文并生成清晰的中文笔记；仅在我明确要求时发布并回读验证。"
+  short_description: "基于原始论文生成可信笔记，并默认同步到对应 Notion 数据库"
+  default_prompt: "使用 $paper-reading-workflow 从 Zotero 获取这篇论文，按指定结构生成中文笔记，更新对应 Notion 数据库中的匹配条目；若不存在则在该数据库中新建，最后回读验证。"
